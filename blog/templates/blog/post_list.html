@@ -2,5 +2,17 @@
 <body>
     <p>Hi there!</p>
     <p>It works!</p>
+{% for post in posts %} {{ posts }} {% endfor %}
+
+< div >
+	< h1 >< a href = "/" > Django chicas Blog < /a >< / h1 >
+< / div >
+{% for post in posts %}
+	< div >
+		< p > publicado: {{ post.published_date }} < /p >
+		< h1 >< a href = "" >{{ post.title }} < /a >< / h1 >
+		< p >{{ post.text|linebreaksbr }} < /p >
+	< / div >
+{% endfor %}
 </body>
 </html>
